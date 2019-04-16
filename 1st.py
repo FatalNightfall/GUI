@@ -42,7 +42,7 @@ DRAM_label = tkinter.Label(text='DRAM', background='#ffaacc')
 DRAM_label.pack()
 DRAM_label.place(x=15, y=45)
 
-entry_box = tkinter.Entry(width=60)
+entry_box = tkinter.Entry(width=48)
 entry_box.pack()
 entry_box.place(x=15, y=450)
 
@@ -71,8 +71,9 @@ check_box3 = tkinter.Checkbutton(text="項目3", variable=val3)
 check_box3.pack()
 check_box3.place(x=15, y=380)
 
-check_button = tkinter.Button(make_window, text='チェックの取得', width=1)
+check_button = tkinter.Button(make_window, text='チェックの取得', width=16)
 check_button.bind("<Button-1>", check)
 check_button.pack()
+check_button.place(x=360, y=450)
 
 make_window.mainloop()
