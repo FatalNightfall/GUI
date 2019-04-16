@@ -2,9 +2,11 @@
 import tkinter
 import tkinter.messagebox
 
-def DeleteEntryValue(event):
+
+def delete_entry_value(event):
 
     entry_box.delete(0, tkinter.END)
+
 
 def check(event):
     global val1
@@ -30,6 +32,7 @@ def check(event):
 
     tkinter.messagebox.showinfo('info', text)
 
+
 make_window = tkinter.Tk()
 make_window.title("HW Monitor")
 make_window.geometry("640x480")
@@ -47,7 +50,7 @@ entry_box.pack()
 entry_box.place(x=15, y=450)
 
 monitoring = tkinter.Button(text='Start Monitoring')
-monitoring.bind("<Button-1>", DeleteEntryValue)
+monitoring.bind("<Button-1>", delete_entry_value)
 monitoring.pack()
 monitoring.place(x=520, y=450)
 
